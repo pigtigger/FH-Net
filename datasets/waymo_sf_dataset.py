@@ -315,7 +315,7 @@ class WaymoSFDataset(Dataset):
                         fg_indices1 = fg_indices1[samp1]
                         fg_indices2 = fg_indices2[samp2]
                     
-                    save_dir = Path(save_path) / '{:03d}'.format(s_id) / 'sf_data_crop2'
+                    save_dir = Path(save_path) / '{:03d}'.format(s_id) / 'sf_data'
                     save_dir.mkdir(parents=True, exist_ok=True)
                     file_save_path = save_dir / '{:07d}'.format(idx)
                     np.savez(file_save_path, pc1=new_pc1, pc2=new_pc2, gt=gt_flow, fg_index=fg_indices1, fg_index_t=fg_indices2)
