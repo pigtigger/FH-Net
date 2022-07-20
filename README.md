@@ -3,8 +3,8 @@
 ![test](https://github.com/pigtigger/FH-Net/blob/main/demo/waymo.gif)
 <a name="LEEHl"></a>
 ## Environment
-- Pytorch >= 1.7
-- Numpy
+- pytorch >= 1.7
+- numpy
 - [waymo-open-dataset](https://github.com/waymo-research/waymo-open-dataset/blob/master/docs/quick_start.md)
 - [mmcv](https://github.com/open-mmlab/mmcv)
 - tqdm
