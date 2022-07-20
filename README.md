@@ -43,7 +43,7 @@ The scene flow data will be saved to `data/waymo_sf/{scene_id}/`. A mini version
 
 **Note:** We recommend using waymo 1.4, since we used segmentation labels to assist in the removal of the ground, and waymo 1.2 dataset has no segmentation labels. If you want to customize the data, you must ensure that waymo >= 1.3 and install waymo-open-dataset-tf-2-6-0. Another way is to retain the ground (more challenging), or use the ground removal parameters we provide in `crop_params.npz` (including the first 100 scenes), which you can load in `create_data.py`.
 
-- For SF-KITTI,  download the KITTI raw data from [link_to_kitti_dataset](http://www.cvlibs.net/datasets/kitti/eval_tracking.php),  (note that only the point clouds and annotations are essential now, we will add more information to the dataset like color in the future),  then put the unzipped folder into data/kitti/,  and run : 
+- For SF-KITTI,  download the KITTI raw data from [link_to_kitti_dataset](http://www.cvlibs.net/datasets/kitti/eval_tracking.php),  (note that only the point clouds and annotations are essential now, we will add more information to the dataset like color in the future),  then put the unzipped folder into `data/kitti/`,  and run : 
 ```bash
 python tools/create_sf_data.py --dataset_type kitti
 ```
