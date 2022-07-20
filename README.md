@@ -31,7 +31,8 @@ python tools/extract_waymo_data.py
 ```bash
 python tools/create_sf_data.py --dataset_type waymo
 ```
-A mini version of SF-Waymo is also provided [here](https://drive.google.com/drive/u/0/folders/1u9xeSnk_M2jVNwEDmr_Skr1teOpRqqxv).
+
+The scene flow data will be saved to `data/waymo_sf/{scene_id}/`. A mini version of SF-Waymo is also provided [here](https://drive.google.com/drive/u/0/folders/1u9xeSnk_M2jVNwEDmr_Skr1teOpRqqxv) directly.
 
 - For SF-KITTI,  download the  KITTI raw data from [link_to_kitti_dataset](http://www.cvlibs.net/datasets/kitti/eval_tracking.php),  (note that only the point clouds and annotations are essential now, we will add more information to the dataset like color in the future),  then  put the unzipped folder into data/kitti/,  and  run : 
 ```bash
