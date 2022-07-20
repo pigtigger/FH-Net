@@ -2,7 +2,7 @@ import os
 from .waymo_converter import Waymo2KITTI
 from tqdm import tqdm
 
-load_dir = './data/waymo/waymo_format/training' # raw data
+load_dir = './data/waymo/training' # raw data
 save_dir = './data/waymo_sf'
 scene_num = len(os.listdir(load_dir))
 

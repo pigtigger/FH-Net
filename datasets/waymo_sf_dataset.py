@@ -333,7 +333,7 @@ class WaymoSFDataset(Dataset):
             list(tqdm(executor.map(map_func, frame_idx), total=len(frame_idx), ncols=100))
 
     def get_frame_idx(self, data_path, scene_id_list, split):
-        imageset_folder = Path(data_path) / 'kitti_format' / 'ImageSets'
+        imageset_folder = Path(data_path) / 'ImageSets'
         imageset_path = str(imageset_folder / (split.lower() + '.txt'))
         with open(imageset_path, 'r') as f:
             lines = f.readlines()
