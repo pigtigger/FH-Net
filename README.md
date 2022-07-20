@@ -15,7 +15,7 @@ Estimating scene flow from real-world point clouds is a fundamental task for pra
 ## Usage
 We construct two real-world scene flow datasets SF-Waymo and SF-KITTI, based on [Waymo 1.4](https://waymo.com/open/) and [KITTI](http://www.cvlibs.net/datasets/kitti/).
 
-- For SF-Waymo,  download the Waymo raw data from [link_to_waymo_open_dataset](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_4_0;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false),  then put the tfrecords (we use the first 100 scenes by default) into corresponding folders in `data/waymo/`,  then run the following command to extract point clouds, 3D annotations, poses and other information form raw data.
+- For SF-Waymo,  download the Waymo raw data from [link_to_waymo_open_dataset](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_4_0;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false),  then put the training tfrecords (we use the first 100 scenes by default) into corresponding folders in `data/waymo/training`,  then run the following command to extract point clouds, 3D annotations, poses and other information form raw data.
 ```bash
 python tools/waymo_extract.py
 ```
@@ -24,8 +24,9 @@ python tools/waymo_extract.py
    data
    ├── waymo
    │   ├── ImageSets
-   │   ├── segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord
-   │   └── ...
+   │   └── training
+   │       ├── segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord
+   │       └── ...
    └── waymo_sf
        ├── 000
        │   ├── calib
