@@ -3,10 +3,11 @@
 ![test](https://github.com/pigtigger/FH-Net/blob/main/demo/waymo.gif)
 <a name="LEEHl"></a>
 ## Environment
-We use pytorch 1.10 with CUDA 11.3. To build the enviroment, run:
-```bash
-pip install -r requirements.txt
-```
+- Pytorch >= 1.7
+- Numpy
+- [waymo-open-dataset](https://github.com/waymo-research/waymo-open-dataset/blob/master/docs/quick_start.md)
+- [mmcv](https://github.com/open-mmlab/mmcv)
+- tqdm
 <a name="CZOc8"></a>
 ## Usage
 We construct two real-world scene flow datasets SF-Waymo and SF-KITTI, based on [Waymo](https://waymo.com/open/) and [KITTI](http://www.cvlibs.net/datasets/kitti/).
