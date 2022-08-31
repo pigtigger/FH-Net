@@ -2,8 +2,8 @@ import sys, os
 sys.path.append(os.getcwd())
 
 import argparse
-from datasets.waymo_sf_dataset import WaymoSFDataset as WaymoDataset
-from datasets.kitti_sf_dataset import KittiSFdataset as KittiDataset
+from pcflow.utils.data_utils.waymo_utils import creat_waymo_sf_data
+from pcflow.datasets.kitti_sf_dataset import KittiSFdataset as KittiDataset
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create scene flow data')
@@ -11,8 +11,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.dataset_type == 'waymo':
         scene_id_list = list(range(100)) # can be any scene
-        dataset = WaymoDataset(data_root='./data/waymo')
-        dataset.creat_data(
+        creat_waymo_sf_data(
+            raw_data_path='./data/waymo',
             data_path='./data/waymo_sf',
             save_path='./data/waymo_sf', 
             scene_id_list=scene_id_list, 
