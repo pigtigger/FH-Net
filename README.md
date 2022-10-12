@@ -50,7 +50,7 @@ python tools/create_sf_data.py --dataset_type kitti
 ```
 The processed SF-KITTI data is also provided [here](https://drive.google.com/drive/u/0/folders/1u9xeSnk_M2jVNwEDmr_Skr1teOpRqqxv) for download.
 
-- We are integrating a complete scene flow code framework and plan to release it in September 2022. The framework will include data preparation, data augmentation, training, evluation, visualization and support most of the current methods. Our model code will be released at the same time, please wait patiently.
+- We are integrating a complete scene flow code framework and plan to release it soon. The framework will include data preparation, data augmentation, training, evluation, visualization and support most of the current methods. Our model code will be released at the same time, please wait patiently.
 
 ## Acknowledgments
 This project is based on the following codebases.
